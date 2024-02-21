@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISTE-HarmonyBOT</title>
+    <link
+    rel="stylesheet"
+    href="styles.css"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Salsa">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+    <div class = "wrapper">
+
+        <div class="container">
+            <!-- Navbar -->
+            <div class="navbar">
+                <div class="navleft">
+                    <img src="iste.jpg" alt="ISTE" class="logo">
+                    <p class="iste">Crypt creation</p>
+                </div>
+                <div class="navright">
+                    <a href="https://iste.nitk.ac.in/#/sig/Crypt" target="_blank">About ISTE Crypt <i class='fas fa-external-link-alt'></i></a>
+                </div>
+            </div>
+
+            <!-- Body -->
+            <div class = "body">
+                <img src = "Friendly LiveBot.gif" class="left">
+                <div class="right">
+                    <div class="welcome">Welcome to ISTE's <br> <img src = "robot-assistant.png" style="width:40px; height: 40px;">
+                        <span class="scene"></span>
+                    </div>
+                    <p class="desc">Introducing HarmonyBOT, your Llama2 powered companion designed to simplify and enrich your daily life. 
+                        It is integrated with a highly accurate BERT-based sentiment analysis model and a personalized mood based music recommendation system.</p>
+                    <button class="btn">Get started</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script>
+        var typeData = new Typed(".scene", {
+            strings:[
+                "HarmonyBOT"
+            ],
+            loop:true,
+            typeSpeed: 120,
+            backSpeed: 200,
+            backDelay: 1000,
+            showCursor: false
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the button element
+            var btn = document.querySelector('.btn');
+        
+            // Add click event listener to the button
+            btn.addEventListener('click', function() {
+                // Navigate to the desired URL
+                window.location.href = 'http://34.131.142.24:8501/';
+            });
+        });
+    </script>
+
+</body>
+</html>
